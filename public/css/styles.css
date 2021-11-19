@@ -140,7 +140,9 @@ main article:hover .descripciones .fas.fa-truck {
     transition-duration: 0.5s;
 } /*Nombre del producto que desaparece*/
 
-
+article img {
+    display: block;
+}
 
 main section article .descripciones .pequeñooculto {
     opacity: 0;
