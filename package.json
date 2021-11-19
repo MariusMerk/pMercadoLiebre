@@ -1,0 +1,15 @@
+{
+  "name": "ejercitacion_en_vivo",
+  "version": "1.0.0",
+  "description": "El ejercicio del día",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Yomero",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {}
+}

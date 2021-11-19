@@ -1,0 +1,383 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+html, body {
+    font-family: 'Roboto', sans-serif;   
+}
+
+header {
+    width: 100%;
+}
+
+.main-header {
+    background-color: #EAC926;
+    padding: 10px;
+}
+
+.main-header-bottom-bar {
+    display:none;
+}
+
+img {
+    width:100%;
+}
+
+
+.logo {
+    flex-basis: 33%;
+}
+
+nav {
+    display:none;
+}
+
+main {
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+    background-color: lightgray;
+    margin: auto;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+footer {
+    text-align: center;
+    line-height: 10px;
+}
+
+h2 {
+    font-size: 24px;
+} /**Titulares*/
+
+p {
+    font-size: 12px;
+} /**Cuerpos de texto*/
+
+.topnav {
+    margin: 2%;
+}
+
+.articulo {
+    border-top: solid 1px #ebebeb;
+    padding: 15px;
+    background-color: white;
+    text-align: left;
+    margin: 10px;
+    width: 100%;
+    transition-duration: 250ms;
+}
+
+main article:hover {
+    box-shadow: 0px 0px 10px rgb(100,100,100);
+}
+
+main article:hover .descripciones .pequeñooculto {
+    opacity: 1;
+}
+
+main article:hover .descripciones .fas.fa-truck {
+    transform: rotate(-90deg);
+    
+}
+
+.cont-arts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.descripciones {
+    display: flex;
+    border-top: solid 1px #ebebeb;
+    padding: 15px;
+    background-color: white;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+    
+}
+
+
+
+.centrarTexto {
+    text-align: center;
+}
+.precio {
+    display: flex;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 2.5%;
+}
+
+.descuento {
+    display: flex;
+    font-size: 16px;
+    color: #39b54a;
+    
+} /*Descuentos*/
+
+
+
+.pequeñooculto {
+    
+    font-size: 16px;
+    color: grey;
+    flex-basis: 100%;
+    transition-duration: 0.5s;
+} /*Nombre del producto que desaparece*/
+
+
+
+main section article .descripciones .pequeñooculto {
+    opacity: 0;
+    transition-duration: 0.5s;
+}
+
+main section article .descripciones .fas.fa-truck {
+   transition: transform 0.8s;
+}
+
+.destacar {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.burger-menu{
+    background-color: blue;
+    border-radius: 5px;
+    width: 25px;
+    padding: 5px;
+    margin: 0px;
+    text-align: center;
+}
+
+.fa-truck {
+    color:#39b54a;
+    border: solid 1px #39b54a;
+    border-radius: 50%;
+    font-size: 16px;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    left: 90%;
+    bottom: 30px;
+    padding: 5px;
+}
+
+.fa-bars{ 
+    color: white;
+}
+
+.fa-credit-card, .fa-gift,.fa-user-shield {
+    font-size: 2em;
+    color:blue;
+    margin-bottom: 10px;
+}
+
+footer p {
+    line-height: 15px;
+    margin: 4%;
+}
+
+footer div {
+    margin: 2%;
+}
+
+/*------Aquí empieza el código del register y login*/
+
+.caja-regis {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    background-color: #ebebeb;
+    position: absolute;
+}
+
+
+
+.caja {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 10px;
+    justify-content: center;   
+}
+
+form.caja {
+    background-color: #ebebeb;
+}
+
+.datos-personales {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+    
+}
+
+.register-body {
+    display: flex;
+    background-color: #ebebeb;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 10px rgb(100,100,100);
+}
+
+.item {
+    margin: 1% 0% 1% 0%;
+    width: 100%;
+}
+
+button {
+    background-color: rgba(125, 157, 257, 1);
+    border-radius: 5px;
+    width: 50%;
+    align-self: center;
+    transition: all;
+    padding: 2.5px;
+    transition-duration: 0.8s;
+}
+
+button:hover {
+    background-color: #0022AA; /* Green */
+    color: white;
+}
+
+button.enviarB:hover {
+    background-color:#0022AA; 
+    color: white;
+}
+
+input:focus {
+    color: blueviolet;
+    font-weight:bold;
+}
+
+input:hover {
+    background-color: rgba(125, 157, 257, .1);
+}
+
+
+
+/*-----Termina código de Register*/
+
+
+
+@media (min-width: 361px) {
+    
+    
+    nav {
+        display:block;
+    }
+
+    .burger-menu{
+        display: none;
+    }
+
+    .pequeñooculto {
+        display: block;
+    }
+
+    article.articulo {
+        width: 40%;
+    }
+    .main-header-bottom-bar {
+        margin-top: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .left-navbar {
+        margin: 3%;
+        display: flex;
+        flex-direction: column;
+    }
+    .right-navbar {
+        margin: 3%;
+        display: flex;
+        flex-direction: column;
+    }
+} 
+
+@media (min-width: 769px) {
+
+    * {
+        font-size: 24px;
+    }
+    .main-header {
+        margin: auto;
+    }
+    
+    nav {
+        display:block;
+    }
+
+    .burger-menu{
+        display: none;
+    }
+
+    .main-header-top-bar {
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .copy-header {
+        max-width: 350px;
+    }
+
+    .main-header-bottom-bar {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .main-header-bottom-bar ul {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .main-header-bottom-bar li {
+        margin: 0px 8px;
+    }
+
+    article.articulo {
+        width: 20%;
+    }
+
+    .left-navbar,.right-navbar {
+        flex-direction: row;
+    }
+
+    footer div.caja {
+        flex-direction: row;
+    }
+
+    footer .caja .fa-gift,.fa-credit-card,.fa-user-shield {
+        transition: color .5ms;
+    }
+    footer .fas.fa-gift:hover {
+        color:rgba(125, 157, 257, 1);
+    }
+    footer .fas.fa-credit-card:hover {
+        color:rgba(125, 157, 257, 1);
+    }
+    footer .fas.fa-user-shield:hover {
+        color:rgba(125, 157, 257, 1);
+    }
+    
+} 
+
